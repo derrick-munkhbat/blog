@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  width: margin 0 auto;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.button {
+  background-color: rgb(182, 177, 177);
+  padding: 3px;
+  border: 2px solid black;
+}
+
+.blog-preview:hover{
+    box-shadow: 1px 3px 5px black;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
