@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { Loader } from "@/components/Loader";
 
 export function Allcategory() {
-
   const [articles, setArticles] = useState();
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -35,8 +34,8 @@ export function Allcategory() {
 
   if (articles === undefined) return <Loader />;
   return (
-      <>
-        <div className="flex justify-between p-6">
+    <>
+      <div className="flex justify-between p-6">
         <div className="flex flex-wrap gap-3">
           <button className="hover:text-orange-500 text-2xl">All</button>
           <button className="hover:text-orange-500 text-2xl">Design</button>
@@ -59,13 +58,13 @@ export function Allcategory() {
         <div className="py-8 text-center">
           <button
             className="p-6 rounded bg-blue-50 hover:bg-blue-200"
-            onClick={loadNext}
+            // onClick={loadNext} error garaad baihaar ni arrow function bolgoson
+            onClick={() => loadNext}
           >
             Load more
           </button>
         </div>
       </div>
-      </>
+    </>
   );
 }
-      

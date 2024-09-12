@@ -6,11 +6,11 @@ export function TrendingCard({ article, profileShown }) {
       href={article.path}
       className="p-4 border rounded-2xl hover:bg-slate-50"
     >
-      <img className="relative mb-4 rounded aspect-video absolute"
+      <img
+        className="relative mb-4 rounded aspect-video"
         src={article.cover_image}
-        
       />
-      
+
       <div className="p-2">
         <div className="flex flex-wrap gap-2 mb-4">
           {article.tag_list.map((tag) => (
